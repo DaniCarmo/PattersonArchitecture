@@ -1,0 +1,7 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+    background-image: url();
+    background-size: cover;
+    height: 800px;
+}
