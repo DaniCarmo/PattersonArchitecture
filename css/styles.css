@@ -1,7 +1,7 @@
 .image-container {
     position: relative;
     overflow: hidden;
-    background-image: url(https://github.com/DaniCarmo/PattersonArchitecture/blob/main/images/banner-image.jpg?raw=true);
+    background-image: url('./images/resized_hero_image.jpg');
     background-size: cover;
     height: 800px;
 }
