@@ -66,6 +66,7 @@ p {
 
 .about-us {
     box-shadow: 3px 3px 3px 1.5px lightslategrey;
+    width: 80%;
 }
 
 /* Gallery Section */
@@ -77,6 +78,10 @@ p {
 #gallery h2 {
     font-size: 36px;
     margin-bottom: 40px;
+}
+
+.gallery-images{
+    width: 80%;
 }
 
 .gallery-container {
@@ -142,6 +147,10 @@ p {
 #contact form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.contact-us {
+    width: 80%;
 }
 
 #contact label {
