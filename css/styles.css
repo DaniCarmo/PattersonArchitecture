@@ -15,7 +15,16 @@ body {
     background-color: #f8f9fa;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.nav-item{
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     margin: 0 0 20px;
@@ -46,18 +55,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    max-width: calc(25% - 20px);
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
 }
 
 .image-wrapper {
