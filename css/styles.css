@@ -48,18 +48,6 @@ p {
     justify-content: center;
 }
 
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    max-width: calc(25% - 20px);
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-}
-
 .image-wrapper {
     position: relative;
 }
