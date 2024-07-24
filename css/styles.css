@@ -114,7 +114,6 @@ p {
     text-align: center;
 }
 
-
 /* Contact Section */
 #contact {
     padding: 80px 0;
@@ -157,7 +156,6 @@ p {
     background-color: #007bff;
 }
 
-
 /* Footer */
 footer {
     background-color: #333;
@@ -177,4 +175,26 @@ footer a {
 
 footer a:hover {
     color: #007bff;
+}
+
+/* Media Queries */
+
+@media (min-width: 478px) and (max-width: 768px) {
+    h1 {
+        font-size:20px;
+    }
+    .logo {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    h1 {
+        font-size:15px;
+    }
+    .logo {
+        height: 40px;
+        width: auto;
+        margin-top: 10px;
+    }
 }
