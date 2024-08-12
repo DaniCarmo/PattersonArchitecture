@@ -18,12 +18,12 @@
   <body>
     <!--Navbar -->
     <div id="mainNavigation">
-        <nav role="navigation">
-          <div class="py-3 text-center border-bottom">
-            <img src="images/patterson-logo.jpg" alt="patterson-logo" class="invert">
-          </div>
-        </nav>
         <div class="navbar-expand-md">
+          <div class="text-center mt-4">
+            <a href="index.html" class="navbar-brand">
+                <h1><strong>Patterson</strong> | Design Architecture</h1>
+            </a>
+          </div>
           <div class="navbar-dark text-center my-2">
             <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
@@ -38,7 +38,7 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">DGallery</a>
+                <a class="nav-link" href="#">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -49,20 +49,28 @@
       </div>
 
    <!-- Hero Section with Parallax Effect -->
-    <section class="parallax">
+    <section id="hero" class="parallax">
         <div class="content">
-            <h1>Welcome to Patterson Design Architecture</h1>
-            <p class="lead">Your vision, our expertise.</p>
+            <h1 class="parallax-text layer1">Welcome to Patterson Design Architecture</h1>
+            <p class="lead parallax-text layer3">Bringing your dreams to reality</p>
+            <p class="lead parallax-text layer4">Innovative solutions for modern living</p>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-light text-dark text-center py-4 my-5">
+        <div class="container d-flex align-items-center justify-content-center">
+            <img src="images/patterson-logo.jpg" alt="logo" aria-label="company logo" width="90" class="rounded-circle">
+            <p class="lead mx-3">Your Vision, Our Expertise</p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="bg-light text-dark text-center py-5">
-        <div class="container p-5 about-us bg-light my-5">
+        <div class="container p-5 about-us my-5">
             <h2>About Us</h2>
             <p>Patterson Design Architecture specializes in designing homes and business premises with a focus on innovation, sustainability, and client satisfaction. With years of experience in the field, we bring your vision to life through meticulous planning and execution.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac risus non justo pharetra cursus. Aenean vel metus a turpis facilisis convallis. Integer tincidunt augue at nisi sollicitudin, non pellentesque felis varius. Aliquam erat volutpat. Maecenas dignissim purus eget risus feugiat, ut consequat metus condimentum. Curabitur ut ante nunc. Nullam tincidunt vel lorem vitae consectetur. Sed et libero id risus consectetur efficitur. Cras consequat ipsum sit amet velit pharetra, et scelerisque est feugiat.</p>
-            <p>Sed ac lectus et lectus blandit dignissim. Morbi ultrices lectus sit amet turpis vehicula, id vehicula leo vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec consectetur, massa ut convallis varius, nulla urna cursus nunc, vel condimentum urna felis at nunc. Mauris tristique tincidunt sapien, nec gravida risus condimentum nec. Curabitur imperdiet felis a turpis commodo, ac aliquet est gravida. Praesent ut justo et metus sagittis sodales. Integer auctor ex in orci viverra, sed cursus odio elementum. Suspendisse potenti.</p>        
         </div>
     </section>
 
@@ -176,9 +184,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('scroll', function() {
-            const parallax = document.querySelector('.parallax');
+            const parallaxElements = document.querySelectorAll('.parallax');
             const scrollPosition = window.scrollY;
-            parallax.style.backgroundPositionY = `${scrollPosition * 0.3}px`;
+            
+            parallaxElements.forEach((parallax) => {
+                parallax.style.backgroundPositionY = `${scrollPosition * 0.3}px`;
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('mainNavigation');
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Adjust the number 50 to the scroll position where you want the change to happen
+            if (scrollPosition > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
