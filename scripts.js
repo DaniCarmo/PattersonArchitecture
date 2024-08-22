@@ -8,8 +8,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-
 // Mobile nav toggle
 const toggler = document.querySelector('.nav-toggler');
 const navLinks = document.querySelector('.nav-links');
@@ -18,9 +16,6 @@ toggler.addEventListener('click', function() {
     toggler.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
-
-
-
 
 // Handle the parallax text layers
 document.addEventListener('scroll', function() {
