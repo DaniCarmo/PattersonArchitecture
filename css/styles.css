@@ -280,7 +280,6 @@ p {
     margin-top: auto;
 }
 
-
 /* About Section with Parallax Effect and Dark Overlay */
 .about-parallax {
     position: relative;
@@ -371,12 +370,6 @@ p {
     }
 }
 
-
-/* Gradient background effects */
-#contact {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-}
-
 /* Shadow effects */
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -385,7 +378,6 @@ h1, h2, h3, h4, h5, h6 {
 .box-shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Beer Slider */
 #before-after {
@@ -444,7 +436,6 @@ h1, h2, h3, h4, h5, h6 {
 .witr_all_pd0 {
     padding: 0;
 }
-
 
 /* Cards section */
 #services {
@@ -515,11 +506,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
-
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
     padding: 50px 0;
 }
 
@@ -623,26 +611,8 @@ footer p {
     }
 }
 
-
-/* Modal Content */
-.modal-content {
-    border: none; 
-    border-radius: 0; 
-    box-shadow: none; 
-    background-color: transparent;
-}
-
-/* Modal Body */
+/* Modal */
 .modal-body {
     padding: 0;
     background-color: transparent;
-}
-
-/* Image within Modal */
-#modalImage {
-    border: 0.5px solid black;
-    border-radius: 0;
-    display: block;
-    width: 100%;
-    max-width: 100%;
 }
